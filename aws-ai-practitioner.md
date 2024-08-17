@@ -19,6 +19,7 @@ We’ll now move into my personal study notes. The notes will largely correlate 
 ### Intro to AWS & Cloud Computing
 Being a “foundation” level exam, there are a few correlates over to the more general Cloud Practitioner exam. These things are about AWS in general and are NOT specific to anything related to AI.
 
+- **IAM**: Standing for Identity & Access Management, IAM shows up in all AWS exams, and for good reason! This is the service that enforces who can do what in your AWS account, including non-human resources. Getting your IAM roles and policies in order is of UTMOST importance when enforcing security of your company’s information!!
 - **Regions & Availability Zones**: Remember that all AWS regions have at least 3 availability zones (AZs).
 - **Shared Responsibility Model**: AWS is responsible for security “of the cloud” while the customer is responsible for their resources “in the cloud”. For example, AWS is responsible for securing the physical data centers and servers themselves while the customer is responsible for setting things like database credentials to ensure only the right people have access.
 
