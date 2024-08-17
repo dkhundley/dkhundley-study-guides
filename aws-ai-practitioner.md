@@ -70,3 +70,14 @@ This section covers what prompt engineering is and a few tactics for optimizatio
 - **Zero-shot prompting**: This is the concept of providing a task to an FM without any sort of specific instructions nor examples.
 - **Few-shot prompting**: As opposed to zero-shot prompting, this is when you would provide multiple examples of an expected output to help guide the FM toward your desired output. (Note: If you provide a single example, this is also called **one-shot prompting**.)
 - **Chain of Thought prompting**: This is the concept of asking the FM to consider its output (“think step by step”) as it is being produced. Oftentimes, people have found that a model is able to provide a better sense of reasoning since it has to explicitly walk itself through each step without necessarily jumping to any conclusions.
+
+
+
+### Amazon Q
+Generally speaking, Amazon Q is currently AWS’s initiative to bring Generative AI to all aspects of AWS. I honestly expect this to evolve beyond Q over time, but for now, the exam covers the bulleted information below.
+
+- **Available models**: As of today, you may only use models from within AWS Bedrock for the Amazon Q services. This specifically means that using the OpenAI models are not allowed today.
+- **Amazon Q Business**: This is a GenAI assistant for your business, such as providing summaries, generating content, and performing routine tasks. In order to make use of this service, you WILL have to expose your company or personal information to the service!! It can connect to 40+ different services (e.g. S3, RDS, Aurora) via data connectors. You can also use 3rd party plugins. Users are managed with IAM.
+- **Amazon Q Apps**: This is a subservice of Amazon Q Business. It is designed to allow a user to create a web-based application using natural language.
+    - David’s note: I’m sure this service will significantly improve over time, but as of today, I can say with confidence that most companies probably don’t want to use this service. This is because many companies, especially larger corporations, adhere to UX standards, like specific Hex values for colors and the like. Strictly enforcing those UX standards can be a tricky thing to do, and relying on AI to do that today is not the most prudent decision. (Again, I expect my opinion to change over time as the AI technology improves!)
+- **Amazon Q Developer**: Amazon Q Developer can answer questions about AWS documentation and resources in your AWS account. (E.g. “List all my AWS Lambda functions.”) Another facet of Amazon Q Developer also works as an AI code companion similar to GitHub Copilot.
