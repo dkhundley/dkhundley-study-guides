@@ -1,3 +1,4 @@
+![](assets/aws-ai-cloud-practitioner-banner.png)
 # AWS AI Practitioner Study Guide
 This page contains my notes for the new AWS AI practitioner certification. The goal is to cover the high level objectives you’ll need to know for the exam. If you would like a specific deep dive on anything, I would recommend referencing additional material, including the study resources I recommend below.
 
