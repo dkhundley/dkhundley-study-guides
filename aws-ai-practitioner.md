@@ -113,7 +113,17 @@ AWS provides a number of **managed services** to make things easier on the user 
 - **Amazon Polly**: This is sort of the inverse of Amazon Transcribe. We can provide a set of text and use Amazon Polly to dictate it out in audio form. It supports a number of different languages and voice types.
 - **Amazon Rekognition**: This AI service is designed to make sense of things in images.
 - **Amazon Forecast**: This service is designed to make sense of time-series data. For example, you might have a bunch of data about customer purchasing patterns from the last several years. You can feed that information to this service, and it will provide a prediction on what future purchasing patterns might look like.
-- **Amazon Lex**:
+- **Amazon Lex**: This service is designed to create a voice or text-based chatbot. It has integrations with other services including Comprehend.
+- **Amazon Personalize**: This service is used to build applications that provide personalized recommendations. It is the same tech that is used to power the general amazon.com.
+- **Amazon Textract**: As the name implies (text + extract), this service analyzes things like images and PDFs to extract the text on them.
+- **Amazon Kendra**: This is a service that is used to extract information from a corpus of information.
+    - David's note: It can be tempting to want to use this as a backend for a RAG system, but Kendra can get very expensive very quickly. I would instead advise using AWS OpenSearch to store your document embeddings. Granted, AWS OpenSearch is not a managed service and requires specialized coding knowledge to enable.
+- **Amazon Mechanical Turk**: This is the one service that is not necessarily software-based. This service actually uses real humans on the backend to do some sort of task generally associated to support some later ML activity. For example, if you want to create an image classification AI model, you will need labelled images. You may use this service to have a human force label all these images.
+- **Amazon Augmented AI (A2I)**: This service helps to augment the evaluation process to ensure that the AI model is performing correctly. It works by allowing high confidence things to be programmatically evaluated, but anything with low confidence might go to a human workforce for evaluation. You can use either your own employees or the Amazon Mechanical Turk service for the human evaluation piece.
+- **AWS DeepRacer**: This service is designed to teach people about reinforcement learning (RL) by training a car to drive itself using just camera feeds. You can actually purchase an RC-like car that will drive itself using your code. It can be a very fun way to learn RL skills.
+- **Amazon Comprehend Medical & Transcribe Medical**: These are nuanced versions of these same services that we already mentioned above, specifically for medical use cases. It is HIPAA compliant.
+- **AWS Tranium**: This isn't particularly a managed service, but it is a specific service that is used to help users train highly complex AI models like LLMs.
+- **AWS Inferentia**: This is very similar to the point above, except where Trainium is designed for training complex models, Inferentia is designed for deploying complex models.
 
 
 
