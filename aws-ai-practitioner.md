@@ -114,3 +114,8 @@ AWS provides a number of **managed services** to make things easier on the user 
 - **Amazon Rekognition**: This AI service is designed to make sense of things in images.
 - **Amazon Forecast**: This service is designed to make sense of time-series data. For example, you might have a bunch of data about customer purchasing patterns from the last several years. You can feed that information to this service, and it will provide a prediction on what future purchasing patterns might look like.
 - **Amazon Lex**:
+
+
+
+### AWS SageMaker
+While we covered all the managed services in the previous section, SageMaker is AWS's "catch all" service for doing things at a lower level with far more control. Granted, it also requires an additional skill level since most of how you interact with this service requires an understanding of the Python coding language.
